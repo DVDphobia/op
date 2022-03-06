@@ -25,7 +25,7 @@ client.on('message', async (message) => {
   if (message.author.bot) return;
   try {
   if (message.channel.id != channel_id) return
-  let res = await axios.get(`http://api.brainshop.ai/get?bid=153868&key=rcKonOgrUFmn5usX&uid=1&msg=${encodeURIComponent(message.content)}`);
+  let res = await axios.get(`http://api.brainshop.ai/get?bid=164457&key=2Gv2Ru11KMDPsvpS&uid=1&msg=${encodeURIComponent(message.content)}`);
   message.reply(res.data.cnt);
   } catch {
    errorEmbed(`Bot error, please try again!`,message)
